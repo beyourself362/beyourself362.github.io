@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Hệ thống học lập trình trực tuyến myclass.</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script type="text/javascript" src="validation.js"></script>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="validation.js"></script>
+	<title>Hệ thống học lập trình trực tuyến myclass.</title>
 </head>
 <body>
 	<div id="container">
@@ -12,24 +12,22 @@
 		<a id="dangnhap" href="#" class="tab" onclick="onDangNhap()">ĐĂNG NHẬP</a>
 		<div id="divdangki" class="divForm">
 			<form name="frmDangKi" action="trangchu.php">
-				<h2>đăng kí thành viên</h2>
+				<h2>Đăng Kí Thành Viên</h2>
 				<hr/>
 				<div id="thongbao">
 					<p id="pthongbao">
-				
+
 					</p>
 				</div>
 				<table>
 					<tr>
-						<td>Tên đăng nhập:</td>
-						<td><input type="text" id="tendangnhap" name="tendangnhap"  class="inputCss"/></td>
+						<td>Tên đăng nhập: </td>
+						<td><input type="text" id="tendangnhap" name="tendangnhap" class="inputCss"/></td>
 					</tr>
-					
 					<tr>
-						<td>Mật khẩu:</td>
+						<td>Mật khẩu: </td>
 						<td><input type="password" id="matkhau" name="matkhau" class="inputCss"/></td>
 					</tr>
-					
 					<tr>
 						<td>Email: </td>
 						<td><input type="text" id="email" name="email" class="inputCss"/></td>
@@ -38,10 +36,11 @@
 						<td>Nghề nghiệp: </td>
 						<td>
 							<select id="nghenghiep" class="drnghenghiep">
-								<option>Vui lòng chọn</option>
-								<option>Lập trình viên</option>
-								<option>Ngân hàng</option>
-								<option>Giảng viên</option>
+								<option value="">Vui lòng chọn</option>
+								<option value="">Lập trình viên</option>
+								<option value="">Ngân hàng</option>
+								<option value="">Giảng viên</option>
+								<option value="">Bán hàng</option>
 							</select>
 						</td>
 					</tr>
@@ -53,8 +52,7 @@
 						<td>Giới tính : </td>
 						<td>
 							<input type="radio" value="nam" id="nam" name="gioitinh"/> Nam
-							 <input type="radio" value="nu" id="nu" name="gioitinh"/> Nữ
-							
+							<input type="radio" value="nu" id="nu" name="gioitinh"/> Nữ	
 						</td>
 					</tr>
 					<tr>
@@ -65,33 +63,29 @@
 					
 					<tr>
 						<td colspan="2" style="text-align:center"> 
-							Bạn đã có tài khoản? Vui lòng click <a href="#" onclick="onDangNhap()">Đăng nhập</a>					
+							Bạn đã có tài khoản? Vui lòng click <a href="#" onclick="onDangNhap()">Đăng nhập</a>
 						</td>
 					</tr>
 				</table>
-				 
 				<br>
 			</form>
 		</div>
-		
 		<div id ="divdangnhap" class="divForm">
 			<form name="frmDangNhap" action="trangchu.php">
-				<h2>đăng kí thành viên</h2>
+				<h2>Đăng Kí Thành Viên</h2>
 				<hr/>
 				<table>
 					<tr>
 						<td>Tên đăng nhập:</td>
 						<td><input type="text" id="idDangNhap" class="inputCss"/></td>
-					</tr>
-					
+					</tr>	
 					<tr>
 						<td>Mật khẩu:</td>
 						<td><input type="text" id="idMatKhau" class="inputCss"/></td>
 					</tr>
-					
 					<tr>
 						<td colspan="2" style="text-align:center"> 
-							<input type="checkbox" id="chxGhiNho"/>  Ghi nhớ lần sau
+							<input type="checkbox" id="chxGhiNho"/> Ghi nhớ lần sau
 						</td>
 					</tr>
 					<tr>
@@ -104,18 +98,16 @@
 							<input type="submit" value="ĐĂNG NHẬP" id="nutDangNhap"/>
 						</td>
 					</tr>
-					
 					<tr>
 						<td colspan="2" style="text-align:center"> 
-							Bạn CHƯA có tài khoản? Vui lòng click <a href="#" onclick="onDangki()">Đăng Kí</a>					
+							Bạn chưa có tài khoản? Vui lòng click <a href="#" onclick="onDangki()">Đăng Kí</a>	
 						</td>
 					</tr>
 				</table>
 			</form>
 		</div>
-		
-			<p id="thongbao"></p>
-			<p id="thongbao1"></p>
+		<p id="thongbao"></p>
+		<p id="thongbao1"></p>
 	</div>
 </body>
 </html>
